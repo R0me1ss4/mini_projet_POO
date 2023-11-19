@@ -81,7 +81,7 @@ def getResponse(neighbors):
     classVotes = {}
 
     for x in range(len(neighbors)):
-        response = neighbors[x][-1]  # En supposant que la réponse est extraite en accédant au dernier élément de chaque voisin.
+        response = neighbors[x][-1]  # En supposant que la réponse (classe) est extraite en accédant au dernier élément de chaque voisin.
         if response in classVotes:
             classVotes[response] += 1
         else:
