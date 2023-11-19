@@ -20,7 +20,7 @@ Les votes sont triés par fréquence décroissante, et la classe majoritaire est
 Cette fonction calcule la précision du modèle en comparant les classes prédites avec les classes réelles dans l'ensemble de test.
 - Section 7: kNNAlgorithm Function
 Cette fonction exécute l'algorithme k-NN. Pour chaque instance dans l'ensemble de test, elle trouve les k voisins les plus proches, détermine la classe majoritaire parmi ces voisins, et stocke la prédiction.
-Enfin, elle imprime la précision du modèle.
+Enfin, elle affiche la précision du modèle.
 - Section 8: Another distance metric (Manhattan distance)
 Cette section ajoute la possibilité d'utiliser la distance de Manhattan comme alternative à la distance euclidienne.
 Deux fonctions supplémentaires (manhattanDistance et getNeighbors2) sont définies pour calculer la distance de Manhattan et trouver les voisins en conséquence.
