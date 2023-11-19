@@ -5,7 +5,7 @@ Explication des sections du code :
 Cette section lit et affiche chaque ligne du fichier 'iris.data.txt'.
 - Section 2: loadDataset Function
 Cette fonction prend en entrée un fichier de données, une proportion de division (split), et deux ensembles vides (trainingSet et testSet). 
-Elle charge les données du fichier CSV, les convertit en nombres à virgule flottante, puis les divise en ensembles d'entraînement et de test en fonction de la valeur de split.
+Elle charge les données du fichier CSV, et les divise en ensembles d'entraînement et de test en fonction de la valeur de split.
 Les données sont stockées dans les ensembles correspondants.
 - Section 3: Euclidean Distance Function
 Cette fonction calcule la distance euclidienne entre deux instances de données de même longueur.
