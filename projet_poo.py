@@ -155,7 +155,7 @@ def kNNAlgorithm2(trainSet, testSet, k):
         result = getResponse(neighbors)
         predictions.append(result)
     accuracy = getAccuracy(testSet, predictions)
-    print(f"\nAccuracy with manhattan distance : {accuracy}%"
+    print(f"\nAccuracy with manhattan distance : {accuracy}%")
           
 filename = 'iris.data.txt'
 loadDataset(filename, 0.7, trainingSet, testSet) #70% entrainement et 30% test
