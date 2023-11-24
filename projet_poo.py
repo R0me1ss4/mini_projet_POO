@@ -36,7 +36,7 @@ def loadDataset(filename, split, trainingSet=[], testSet=[]):
 # Test
 trainingSet=[]
 testSet=[]
-loadDataset('iris.data.txt', 0.66, trainingSet, testSet)
+loadDataset('iris.data.txt', 0.66, trainingSet, testSet) #66% Entrainement et 34% test 
 print('Train: ' + repr(len(trainingSet)))
 print('Test: ' + repr(len(testSet)))
 
@@ -123,7 +123,7 @@ def kNNAlgorithm(trainSet, testSet, k):
     print(f"\nAccuracy: {accuracy}%")
 
 filename = 'iris.data.txt'
-loadDataset(filename, 0.7, trainingSet, testSet)
+loadDataset(filename, 0.7, trainingSet, testSet) #70% entrainement et 30% test 
 # Tester l'algorithme kNN avec k=3 et la distance Euclidienne:
 kNNAlgorithm(trainingSet, testSet, k=3)
 #Nous prenons une petite valeur de K car notre base d'apprentissage est petite. 
@@ -158,7 +158,9 @@ def kNNAlgorithm2(trainSet, testSet, k):
         predictions.append(result)
     accuracy = getAccuracy(testSet, predictions)
     print(f"\nAccuracy with manhattan distance : {accuracy}%")
-
+    
+filename = 'iris.data.txt'
+loadDataset(filename, 0.7, trainingSet, testSet)
 # Tester l'algorithme kNN avec k=3 et la distance de Manhattan:
 kNNAlgorithm2(trainingSet, testSet, k=3)
 
