@@ -79,7 +79,6 @@ print(neighbors)
 # Définition de la fonction pour obtenir la réponse basée sur les voisins
 def getResponse(neighbors):
     classVotes = {}
-
     for x in range(len(neighbors)):
         response = neighbors[x][-1]  # En supposant que la réponse (classe) est extraite en accédant au dernier élément de chaque voisin.
         if response in classVotes:
@@ -90,7 +89,6 @@ def getResponse(neighbors):
     return sortedVotes[0][0]
 #Dans l'apprentissage supervisé, chaque instance de données est généralement associée à une classe ou à une étiquette qui représente la catégorie à laquelle elle appartient. 
 #Cette classe est souvent stockée dans la dernière colonne du jeu de données.
-
 # Test :
 neighbors = [[1, 1, 1, 'a'], [2, 2, 2, 'a'], [3, 3, 3, 'b']]
 response = getResponse(neighbors)
@@ -157,10 +155,10 @@ def kNNAlgorithm2(trainSet, testSet, k):
         result = getResponse(neighbors)
         predictions.append(result)
     accuracy = getAccuracy(testSet, predictions)
-    print(f"\nAccuracy with manhattan distance : {accuracy}%")
-    
+    print(f"\nAccuracy with manhattan distance : {accuracy}%"
+          
 filename = 'iris.data.txt'
-loadDataset(filename, 0.7, trainingSet, testSet)
+loadDataset(filename, 0.7, trainingSet, testSet) #70% entrainement et 30% test
 # Tester l'algorithme kNN avec k=3 et la distance de Manhattan:
 kNNAlgorithm2(trainingSet, testSet, k=3)
 
