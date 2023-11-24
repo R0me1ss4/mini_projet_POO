@@ -162,3 +162,5 @@ loadDataset(filename, 0.7, trainingSet, testSet) #70% entrainement et 30% test
 # Tester l'algorithme kNN avec k=3 et la distance de Manhattan:
 kNNAlgorithm2(trainingSet, testSet, k=3)
 
+#on obtient : Accuracy: 89.36170212765957% et Accuracy with manhattan distance : 95.0% 
+#donc la prédiction en utilisant la distance de manhattan est meilleure. 
