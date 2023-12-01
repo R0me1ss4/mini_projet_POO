@@ -126,7 +126,7 @@ loadDataset(filename, 0.7, trainingSet, testSet) #70% entrainement et 30% test
 kNNAlgorithm(trainingSet, testSet, k=3)
 #Nous prenons une petite valeur de K car notre base d'apprentissage est petite. 
 
-"""7- Another distance metric (minkowski distance) """
+"""7- Another distance metric (manhattan distance) """
 # Définition de la fonction pour calculer la distance de Manhattan
 def manhattanDistance(instance1, instance2, length):
     distance = 0
